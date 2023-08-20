@@ -1,23 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import { useRef } from "react";
+import "./App.css";
+import ship from "./outer wilds ship/outer_wilds__the_ship.glb";
 
 function App() {
+
+  const spaceShip = useRef()
+
+  console.log(ship)
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="space-ship-wrapper">
+      <model-viewer
+        classname="space-ship"
+        alt="Outer Wilds Space ship"
+        src={ship}
+        ar
+        camera-controls
+        touch-action="pan-y"
+        disable-tap
+        useRef={spaceShip}
+      ></model-viewer>
     </div>
   );
 }
