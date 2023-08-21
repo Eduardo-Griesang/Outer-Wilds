@@ -17,17 +17,70 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
+    overflow-x: hidden;
 }
 
 model-viewer {
-    width: 700px;
+    animation: ship-in 1.5s forwards;
+    animation-delay: 5s;
     height: 500px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translateY(-350px) translateX(550px);
+    width: 700px;
+    z-index: 9;
+}
+
+@keyframes ship-in {
+
+    100%{
+        transform: translateY(0) translateX(0);
+
+    }
 }
 
 .space-ship-wrapper{
-    background-image: url(../public/images/backgound.jpg);
-    display: flex;
-    justify-content: center;
+    background-image: url(./assets/images/backgound-stars.jpg);
     height: 100vh;
     width: 100vw;
+}
+
+.planet{
+    animation: planet-fade 4s linear;
+    background-image: url(./assets/images/backgound-nave.jpg);
+    background-repeat: no-repeat;
+    height: 644px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transform: translateZ(-200px);
+    width: 774px;
+    z-index: 2;
+}
+
+@keyframes planet-fade {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        transform: translateZ(0);
+        opacity: 1;
+    }
+}
+
+.header-logo{
+    animation: logo-fade 4s ease-in forwards;
+    animation-delay: 4s;
+    margin-top: 6%;
+    margin-left: 5%;
+    opacity: 0;
+    height: auto;
+    width: 40%;
+}
+
+@keyframes logo-fade {
+    100%{
+        opacity: 1;
+    }
 }
