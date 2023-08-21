@@ -47,11 +47,19 @@ model-viewer {
 }
 
 .solar-sistem{
+    animation: roda 100s linear infinite;
+    animation-delay: 1.3s;
     background-image: url(./assets/images/orbit.png);
     background-repeat: no-repeat;
-    height: 709px;
-    width: 710px;
+    height: 707px;
+    width: 705px;
     position: absolute;
-    top: 100vh;
-    right: -100px;
+    top: 107vh;
+    right: 10px;
+}
+
+@keyframes roda {
+    100%{
+        transform: rotate(360deg);
+    }
 }

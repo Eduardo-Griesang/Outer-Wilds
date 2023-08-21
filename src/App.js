@@ -1,5 +1,5 @@
-import { useRef } from "react";
-import { motion } from "framer-motion";
+import { useEffect, useRef } from "react";
+import { motion, useInView, useAnimation } from "framer-motion";
 
 import "./App.css";
 
@@ -8,10 +8,19 @@ import Header from "./components/Header";
 import AboutTheGame from "./components/AboutTheGame";
 
 function App() {
-  const spaceShip = useRef();
+  const solarSistem = useRef(null);
+  const isInView = useInView(solarSistem, {once: true})
+
+  const mainControls = useAnimation()
+
+  useEffect(() => {
+    if(isInView){
+      mainControls.start("visible")
+    }
+  }, [isInView])
 
   return (
-    <>
+    <main>
       <Header />
 
       <model-viewer
@@ -22,11 +31,10 @@ function App() {
         camera-controls
         touch-action="pan-y"
         disable-tap
-        useRef={spaceShip}
         camera-orbit="calc(335rad + env(window-scroll-y) * 4rad) calc(60deg + env(window-scroll-y) * 50deg) calc(150m - env(window-scroll-y) * 10m)"
       ></model-viewer>
 
-      <div className="txt-content">
+      <div className="txt-content" ref={solarSistem}>
         <div>
           <AboutTheGame title="Explore an entire Solar System">
             <p>
@@ -56,13 +64,16 @@ function App() {
 
         <motion.div
           className="solar-sistem"
-          animate={{ y: 0, x:-100}}
-          transition={{ ease: "linear", duration: 1, x: { duration: 1 } }}
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 0.9 }}
-        />
+          variants={{
+            hidden: { opacity: 0, x: 100 },
+            visible: { opacity: 1, x: 0 }
+          }}
+          initial="hidden"
+          animate= {mainControls}
+          transition={{ duration: 1, delay: 0.5  }}
+        /> 
       </div>
-    </>
+    </main>
   );
 }
 
