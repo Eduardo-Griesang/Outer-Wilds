@@ -1,0 +1,21 @@
+.about-text-wrapper{
+    color: aliceblue;
+    font-family: var(--fonte-principal);
+    margin-left: 5%;
+    margin-right: 4%;
+    width: 60%;
+    z-index: 2;
+}
+
+.about-title{
+    padding-top: 1em;
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 3em;
+}
+
+.about-text p{
+    font-size: 1.2em;
+    padding-bottom: 1em;
+    line-height: 1.36;
+}

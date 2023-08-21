@@ -5,7 +5,7 @@
 }
 
 .planet{
-    animation: planet-fade 4s linear;
+    animation: planet-fade 3s linear;
     background-image: url(../../assets/images/backgound-nave.jpg);
     background-repeat: no-repeat;
     height: 644px;
@@ -28,8 +28,8 @@
 }
 
 .header-logo{
-    animation: logo-fade 4s ease-in forwards;
-    animation-delay: 4s;
+    animation: logo-fade 3s ease-in forwards;
+    animation-delay: 2.5s;
     margin-top: 6%;
     margin-left: 5%;
     opacity: 0;
