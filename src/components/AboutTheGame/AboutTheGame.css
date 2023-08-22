@@ -1,8 +1,8 @@
 .about-text-wrapper{
     color: aliceblue;
     font-family: var(--fonte-principal);
-    margin-left: 5%;
-    margin-right: 4%;
+    padding-left: 5%;
+    padding-right: 4%;
     width: 60%;
     z-index: 2;
 }
@@ -18,4 +18,41 @@
     font-size: 1.2em;
     padding-bottom: 1em;
     line-height: 1.36;
+}
+
+@media screen and (max-width: 1253px) {
+    .about-text-wrapper{
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .about-text-wrapper{
+        width: 74%;
+    }
+    .about-title{
+        font-size: 2.8rem;
+    }
+    .about-text p{
+        font-size: 1.1em;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .about-title{
+        font-size: 2.8rem;
+        line-height: 1.5em;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .about-text-wrapper{
+        width: 85%;
+    }
+    .about-title{
+        font-size: 2rem;
+    }
+    .about-text p{
+        font-size: 1.05em;
+    }
 }

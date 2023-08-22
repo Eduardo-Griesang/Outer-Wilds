@@ -48,13 +48,12 @@ model-viewer {
 
 .solar-sistem{
     animation: roda 100s linear infinite;
-    animation-delay: 1.3s;
-    background-image: url(./assets/images/orbit.png);
-    background-repeat: no-repeat;
-    height: 707px;
-    width: 705px;
+    animation-delay: 2s;
+    overflow: hidden;
+    height: auto;
+    width: 37%;
     position: absolute;
-    top: 107vh;
+    top: 122vh;
     right: 10px;
 }
 
@@ -62,4 +61,8 @@ model-viewer {
     100%{
         transform: rotate(360deg);
     }
+}
+
+@media screen and (max-width: 1200px) {
+    
 }
