@@ -1,16 +1,18 @@
 .solar-system-wrapper{
     background-image: url(../../assets/images/planets/background\ planets.jpg);
-    background-size: 2%;
+    background-size: 150%;
+    background-repeat: repeat;
     padding: 2em 0;
     padding-right: 2em;
     display: flex;
     align-items: center;
     position: relative;
+    overflow: hidden;
 }
 
-.solar-system-wrapper img:hover:not(.sun){
+.solar-system-wrapper img:hover:not(.sun, .giantsDeepTelescope, .whiteHole){
     transform: scale(1.125);
-    transition: all 0.5s;
+    transition: 0.5s ease-out;
 }
 
 .sun{
@@ -18,6 +20,7 @@
 }
 
 .sunStation{
+    margin-left: 3px;
     width: 10%;
 }
 
@@ -46,8 +49,13 @@
     width: 45%;
 }
 
-.giantsDeep{
+.giantsDeepTelescope{
     margin-left: 5vw;
+    width: 11%;
+}
+
+.giantsDeep{
+    margin-left: 0.5vw;
     width: 65%;
 }
 

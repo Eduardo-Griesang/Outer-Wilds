@@ -10,6 +10,7 @@ import theInterloper from '../../assets/images/planets/cometa.png'
 import hollowsLantern from '../../assets/images/planets/vulcão.png'
 import brittleHollow from '../../assets/images/planets/buraco negro.png'
 import quanticMoon from '../../assets/images/planets/lua quantica.png'
+import giantsDeepTelescope from '../../assets/images/planets/giants deep telescope.png'
 import giantsDeep from '../../assets/images/planets/giants deep.png'
 import darkBramble from '../../assets/images/planets/abrolho sombrio.png'
 import whiteHole from '../../assets/images/planets/buraco branco.png'
@@ -28,6 +29,7 @@ const AboutThePlanets = () => {
             <Planets src={hollowsLantern} alt={"hollowsLantern"} />
             <Planets src={brittleHollow} alt={"brittleHollow"} />
             <Planets src={quanticMoon} alt={"quanticMoon"} />
+            <Planets src={giantsDeepTelescope} alt={"giantsDeepTelescope"} />
             <Planets src={giantsDeep} alt={"giantsDeep"} />
             <Planets src={darkBramble} alt={"darkBramble"} />
             <Planets src={whiteHole} alt={"whiteHole"} />

@@ -22,6 +22,8 @@ time, mark, audio, video {
 
 :root{
     --fonte-principal: 'Josefin Sans', sans-serif;
+    --orange: #ff7d25;
+    --color-back: #0b1e26;
 }
 
 model-viewer {

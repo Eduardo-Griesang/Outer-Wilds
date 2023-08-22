@@ -1,0 +1,21 @@
+.footer{
+    align-items: center;
+    background-color: black;
+    color: var(--orange);
+    display: flex;
+    font-family: var(--fonte-principal);
+    justify-content: space-between;
+    padding: 3em 2em;
+    border-top: 0.5px solid #838383;
+}
+
+.footer h3{
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+.footer nav ul{
+    display: flex;
+    font-size: 1.5em;
+    gap:1em;
+}

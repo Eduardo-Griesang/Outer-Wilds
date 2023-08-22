@@ -8,6 +8,7 @@ import ship from "./assets/outer wilds ship/outer_wilds__the_ship.glb";
 import Header from "./components/Header";
 import AboutTheGame from "./components/AboutTheGame";
 import AboutThePlanets from "./components/AboutThePlanets";
+import Footer from "./components/Footer";
 
 function App() {
   const solarSistem = useRef(null);
@@ -89,6 +90,8 @@ function App() {
       </div>
 
       <AboutThePlanets />
+
+      <Footer />
     </main>
   );
 }
