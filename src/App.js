@@ -2,6 +2,7 @@ import { useEffect, useRef } from "react";
 import { motion, useInView, useAnimation } from "framer-motion";
 
 import "./App.css";
+import solarSystem from './assets/images/orbit.png'
 
 import ship from "./assets/outer wilds ship/outer_wilds__the_ship.glb";
 import Header from "./components/Header";
@@ -9,15 +10,15 @@ import AboutTheGame from "./components/AboutTheGame";
 
 function App() {
   const solarSistem = useRef(null);
-  const isInView = useInView(solarSistem, {once: true})
+  const isInView = useInView(solarSistem, { once: true });
 
-  const mainControls = useAnimation()
+  const mainControls = useAnimation();
 
   useEffect(() => {
-    if(isInView){
-      mainControls.start("visible")
+    if (isInView) {
+      mainControls.start("visible");
     }
-  }, [isInView])
+  }, [isInView]);
 
   return (
     <main>
@@ -60,18 +61,30 @@ function App() {
               system spirals out of control.
             </p>
           </AboutTheGame>
+
+          <AboutTheGame title="Grab Your Hiking Gear">
+            <p>
+              Strap on your hiking boots, check your oxygen levels, and get
+              ready to venture into space. Use the Little Scout space probe to
+              illuminate dark caves, take photos, or test for hazards in your
+              environment. Track down mysterious audio with your Signal Scope or
+              use your Translator to decipher an ancient Nomai riddle. Navigate
+              the darkness of space with your jetpack and ship.
+            </p>
+          </AboutTheGame>
         </div>
 
         <motion.div
-          className="solar-sistem"
           variants={{
             hidden: { opacity: 0, x: 100 },
-            visible: { opacity: 1, x: 0 }
+            visible: { opacity: 0.8, x: 0 },
           }}
+          transition={{duration: 2, delay: 0.5}}
           initial="hidden"
-          animate= {mainControls}
-          transition={{ duration: 1, delay: 0.5  }}
-        /> 
+          animate={mainControls}
+        >
+          <img className="solar-sistem" src={solarSystem} alt="Outer Wilds solar system" />
+        </motion.div>
       </div>
     </main>
   );
