@@ -1,0 +1,83 @@
+.solar-system-wrapper{
+    background-image: url(../../assets/images/planets/background\ planets.jpg);
+    background-size: 2%;
+    padding: 2em 0;
+    padding-right: 2em;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.solar-system-wrapper img:hover:not(.sun){
+    transform: scale(1.125);
+    transition: all 0.5s;
+}
+
+.sun{
+    width: 50%;
+}
+
+.sunStation{
+    width: 10%;
+}
+
+.hourglassTwins{
+    margin-left: 7vw;
+    width: 23%;
+}
+
+.theAttlerock{
+    margin-left: 5vw;
+    width: 13%;
+}
+
+.timberHeart{
+    margin-left: 1.5vw;
+    width: 45%;
+}
+
+.hollowsLantern{
+    margin-left: 5vw;
+    width: 14%;
+}
+
+.brittleHollow{
+    margin-left: 1.5vw;
+    width: 45%;
+}
+
+.giantsDeep{
+    margin-left: 5vw;
+    width: 65%;
+}
+
+.darkBramble{
+    margin-left: 5vw;
+    width: 50%;
+}
+
+.whiteHole{
+    margin-left: 5vw;
+    width: 5%;
+}
+
+.whiteHoleStation{
+    position: absolute;
+    right: 5px;
+    top: 45%;
+    width: 1.7%;
+}
+
+.theInterloper{
+    position: absolute;
+    width: 5%;
+    top: 10vh;
+    right: 50vw;
+}
+
+.quanticMoon{
+    position: absolute;
+    width: 3%;
+    top: 60vh;
+    right: 35vw;
+}

@@ -7,6 +7,7 @@ import solarSystem from './assets/images/orbit.png'
 import ship from "./assets/outer wilds ship/outer_wilds__the_ship.glb";
 import Header from "./components/Header";
 import AboutTheGame from "./components/AboutTheGame";
+import AboutThePlanets from "./components/AboutThePlanets";
 
 function App() {
   const solarSistem = useRef(null);
@@ -86,6 +87,8 @@ function App() {
           <img className="solar-sistem" src={solarSystem} alt="Outer Wilds solar system" />
         </motion.div>
       </div>
+
+      <AboutThePlanets />
     </main>
   );
 }
