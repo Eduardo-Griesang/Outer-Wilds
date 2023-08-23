@@ -22,3 +22,34 @@
     font-size: 1.5em;
     gap: 1em;
 }
+
+@media screen and (max-width: 768px) {
+    .footer{
+        padding: 1.5em 1.5em;
+    }
+    .footer h3{
+        font-size: 1.3em;
+    }
+    .footer nav ul{
+        font-size: 1.3em;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .footer-div{
+        flex-direction: column;
+        gap: 1em;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .footer{
+        padding: 1.2em 1.2em;
+    }
+    .footer h3{
+        font-size: 1.2em;
+    }
+    .footer nav ul{
+        font-size: 1.2em;
+    }
+}
