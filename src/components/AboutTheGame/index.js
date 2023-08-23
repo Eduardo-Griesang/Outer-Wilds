@@ -9,7 +9,7 @@ const AboutTheGame = ({ title, children }) => {
 
     const textControls = useAnimation()
 
-    useEffect(() =>{
+    useEffect(() => {
         if(textInView){
             textControls.start("visible")
         }
