@@ -6,10 +6,10 @@ const Planets = ({ src, alt, planetName, planetDescription }) => {
     const planetInfoRef = useRef()
 
     function whereToHover(e) {
+        const element = planetInfoRef.current;
+
         const positionX = e.target.x;
-        const positionY = e.target.y + e.target.clientHeight -30;
-        
-        const element = planetInfoRef.current
+        const positionY = e.target.y + e.target.height -40;
 
         element.style.left = `${positionX}px`
         element.style.top = `${positionY}px`
