@@ -9,7 +9,9 @@ const Planets = ({ src, alt, planetName, planetDescription }) => {
         const element = planetInfoRef.current;
 
         const positionX = e.target.x;
-        const positionY = e.target.y + e.target.height -40;
+        const positionY = e.target.offsetTop + e.target.height +13;
+
+        console.log(e, positionY)
 
         element.style.left = `${positionX}px`
         element.style.top = `${positionY}px`

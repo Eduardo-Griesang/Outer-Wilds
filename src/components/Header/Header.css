@@ -6,15 +6,12 @@
 
 .planet{
     animation: planet-fade 3s linear;
-    background-image: url(../../assets/images/backgound-nave.jpg);
-    background-repeat: no-repeat;
-    height: 644px;
     position: absolute;
     bottom: 0;
     right: 0;
     transform: translateZ(-200px);
-    width: 774px;
-    z-index: 2;
+    overflow: hidden;
+    width: 40%;
 }
 
 @keyframes planet-fade {
@@ -35,10 +32,53 @@
     opacity: 0;
     height: auto;
     width: 40%;
+    z-index: 3;
 }
 
 @keyframes logo-fade {
     100%{
         opacity: 1;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .planet{
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .planet{
+        width: 60%;
+    }
+    .header-logo{
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .planet{
+        width: 75%;
+    }
+    .header-logo{
+        width: 65%;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .planet{
+        width: 85%;
+    }
+    .header-logo{
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .planet{
+        width: 100%;
+    }
+    .header-logo{
+        width: 90%;
     }
 }

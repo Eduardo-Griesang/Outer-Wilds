@@ -25,62 +25,80 @@ const AboutThePlanets = () => {
         src={sunStation}
         alt={"sunStation planets-Hover"}
         planetName={"The sun Station"}
-        planetDescription={"Is an ancient Nomai station in an extremely close and rapid orbit around the Sun."}
+        planetDescription={
+          "Is an ancient Nomai station in an extremely close and rapid orbit around the Sun."
+        }
       />
       <Planets
         src={hourglassTwins}
         alt={"hourglassTwins planets-Hover"}
         planetName={"The Hourglass Twins"}
-        planetDescription={"Are binary planets orbiting each other. Ember Twin is mostly desert rock divided into two halves by a wide equatorial canyon, and Ash Twin is almost entirely made of sand laid over a black, rocky core."}
+        planetDescription={
+          "Are binary planets orbiting each other. Ember Twin is mostly desert rock divided into two halves by a wide equatorial canyon, and Ash Twin is almost entirely made of sand laid over a black, rocky core."
+        }
       />
       <Planets
         src={theAttlerock}
         alt={"theAttlerock planets-Hover"}
         planetName={"The Attlerock"}
-        planetDescription={"Is the only natural satellite of Timber Hearth. It is almost entirely barren, the terrain mostly level except where it is pocked with deep craters."}
+        planetDescription={
+          "Is the only natural satellite of Timber Hearth. It is almost entirely barren, the terrain mostly level except where it is pocked with deep craters."
+        }
       />
       <Planets
         src={timberHeart}
         alt={"timberHeart planets-Hover"}
         planetName={"Timber Hearth"}
-        planetDescription={"Is the home planet of the Hearthians and where you will begin your journey. It has a mainly rocky composition accented with forests, ridges, and waterfalls."}
+        planetDescription={
+          "Is the home planet of the Hearthians and where you will begin your journey. It has a mainly rocky composition accented with forests, ridges, and waterfalls."
+        }
       />
       <Planets
         src={theInterloper}
         alt={"theInterloper planets-Hover"}
         planetName={"The Interloper"}
-        planetDescription={"Is a comet on a highly elliptical orbit around the sun. It is relatively small, but is fairly easy to land on. Due to the lack of gravity in its interior"}
+        planetDescription={
+          "Is a comet on a highly elliptical orbit around the sun. It is relatively small, but is fairly easy to land on. Due to the lack of gravity in its interior"
+        }
       />
       <Planets
         src={hollowsLantern}
         alt={"hollowsLantern planets-Hover"}
         planetName={"Hollow's Lantern"}
-        planetDescription={"Is a relatively small but highly volcanic moon orbiting Brittle Hollow. It has four volcanoes that throw out balls of lava into space at random short intervals."}
+        planetDescription={
+          "Is a relatively small but highly volcanic moon orbiting Brittle Hollow. It has four volcanoes that throw out balls of lava into space at random short intervals."
+        }
       />
       <Planets
         src={brittleHollow}
         alt={"brittleHollow planets-Hover"}
         planetName={"Brittle Hollow"}
-        planetDescription={"The planet consists of a brittle, rocky crust, surrounding a hollow interior with a large Black Hole serving as the planet's core."}
+        planetDescription={
+          "The planet consists of a brittle, rocky crust, surrounding a hollow interior with a large Black Hole serving as the planet's core."
+        }
       />
       <Planets
         src={quantumMoon}
         alt={"quantumMoon planets-Hover"}
-        planetName={"????"}
-        planetDescription={"How does a Quantum Moon works?"}
+        planetName={"Quantum Moon"}
+        planetDescription={"????"}
       />
       <Planets src={giantsDeepTelescope} alt={"giantsDeepTelescope"} />
       <Planets
         src={giantsDeep}
         alt={"giantsDeep planets-Hover"}
         planetName={"Giant's Deep"}
-        planetDescription={"An ocean planet made of increasingly dense fluid layers, with five small islands on the surface. Filled with turbulent weather and a dense atmosphere, massive cyclones frequently form and travel along the surface of the water."}
+        planetDescription={
+          "An ocean planet made of increasingly dense fluid layers, with five small islands on the surface. Filled with turbulent weather and a dense atmosphere, massive cyclones frequently form and travel along the surface of the water."
+        }
       />
       <Planets
         src={darkBramble}
         alt={"darkBramble planets-Hover"}
         planetName={"Dark Bramble"}
-        planetDescription={"A large, confusing network of twisted vines and teleportation passages, the imploded remnants of a fifth planet that has long since been infected and overrun by space-bending plant growth."}
+        planetDescription={
+          "A large, confusing network of twisted vines and teleportation passages, the imploded remnants of a fifth planet that has long since been infected and overrun by space-bending plant growth."
+        }
       />
       <Planets src={whiteHole} alt={"whiteHole"} />
       <Planets src={whiteHoleStation} alt={"whiteHoleStation"} />

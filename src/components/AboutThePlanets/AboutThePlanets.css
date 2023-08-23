@@ -60,6 +60,7 @@
 }
 
 .giantsDeep{
+    position: relative;
     margin-left: 0.5vw;
     transition: 0.5s ease-in-out;
     width: 65%;
@@ -88,13 +89,13 @@
     position: absolute;
     top: 10vh;
     transition: 0.5s ease-in-out;
-    right: 50vw;
+    right: 70vw;
     width: 5%;
 }
 
 .quantumMoon{
     position: absolute;
-    top: 60vh;
+    top: 15vh;
     transition: 0.5s ease-in-out;
     right: 35vw;
     width: 3%;
