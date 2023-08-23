@@ -10,9 +10,8 @@
     overflow: hidden;
 }
 
-.solar-system-wrapper img:hover:not(.sun, .giantsDeepTelescope, .whiteHole){
+.solar-system-wrapper img:hover:not(.sun, .giantsDeepTelescope, .whiteHole, .whiteHoleStation){
     transform: scale(1.125);
-    transition: 0.5s ease-out;
 }
 
 .sun{
@@ -21,31 +20,37 @@
 
 .sunStation{
     margin-left: 3px;
+    transition: 0.5s ease-in-out;
     width: 10%;
 }
 
 .hourglassTwins{
     margin-left: 7vw;
+    transition: 0.5s ease-in-out;
     width: 23%;
 }
 
 .theAttlerock{
     margin-left: 5vw;
+    transition: 0.5s ease-in-out;
     width: 13%;
 }
 
 .timberHeart{
     margin-left: 1.5vw;
+    transition: 0.5s ease-in-out;
     width: 45%;
 }
 
 .hollowsLantern{
     margin-left: 5vw;
+    transition: 0.5s ease-in-out;
     width: 14%;
 }
 
 .brittleHollow{
     margin-left: 1.5vw;
+    transition: 0.5s ease-in-out;
     width: 45%;
 }
 
@@ -56,11 +61,13 @@
 
 .giantsDeep{
     margin-left: 0.5vw;
+    transition: 0.5s ease-in-out;
     width: 65%;
 }
 
 .darkBramble{
     margin-left: 5vw;
+    transition: 0.5s ease-in-out;
     width: 50%;
 }
 
@@ -73,19 +80,22 @@
     position: absolute;
     right: 5px;
     top: 45%;
+    transition: 0.5s ease-in-out;
     width: 1.7%;
 }
 
 .theInterloper{
     position: absolute;
-    width: 5%;
     top: 10vh;
+    transition: 0.5s ease-in-out;
     right: 50vw;
+    width: 5%;
 }
 
-.quanticMoon{
+.quantumMoon{
     position: absolute;
-    width: 3%;
     top: 60vh;
+    transition: 0.5s ease-in-out;
     right: 35vw;
+    width: 3%;
 }
