@@ -8,6 +8,7 @@
     align-items: center;
     position: relative;
     overflow: hidden;
+    height: 100vh;
 }
 
 .solar-system-wrapper img:hover:not(.sun, .giantsDeepTelescope, .whiteHole, .whiteHoleStation){
@@ -90,7 +91,7 @@
     top: 10vh;
     transition: 0.5s ease-in-out;
     right: 70vw;
-    width: 5%;
+    width: 4.2%;
 }
 
 .quantumMoon{
@@ -99,4 +100,119 @@
     transition: 0.5s ease-in-out;
     right: 35vw;
     width: 3%;
+}
+
+@media screen and (max-width: 1024px) {
+    .solar-system-wrapper{
+        height: 90vh;
+    }
+    .theInterloper{
+        top: 20vh;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .solar-system-wrapper img:hover:not(.sun, .giantsDeepTelescope, .whiteHole, .whiteHoleStation){
+        transform: scale(1.125) rotate(90deg);
+    }
+    .solar-system-wrapper{
+        padding: 0;
+        height: 100vh;
+        flex-direction: column;
+        align-items: center;
+    }
+    .solar-system-wrapper img{
+        transform: rotate(90deg);
+    }
+    .sun{
+        position: absolute;
+        top: -25%;
+        left: 41%;
+        width: 15vh;
+    }
+    .sunStation{
+        margin-top: 15vh;
+        margin-left: 2%;
+        width: 3.5%;
+    }
+    .hourglassTwins{
+        margin-right: 3%;
+        width: 7vh;
+    }
+    .theAttlerock{
+        margin-right: 3%;
+        width: 4.3vh;
+    }
+    .timberHeart{
+        margin-top: 1.5%;
+        width: 10vh;
+    }
+    .hollowsLantern{
+        margin-top: 4%;
+        margin-right: 3%;
+        width: 4.3vh;
+    }
+    .brittleHollow{
+        margin-top: 1.7%;
+        width: 10vh;
+    }
+    .giantsDeepTelescope{
+        margin-top: 3%;
+        margin-right: 3%;
+        width: 3vh;
+    }
+    .giantsDeep{
+        margin-top: 1%;
+        width: 15vh;
+    }
+    .darkBramble{
+        margin-top: 5%;
+        margin-right: 5%;
+        width: 12vh;
+    }
+    .whiteHole{
+        margin-top: 5%;
+        margin-bottom: 3px;
+        margin-right: 5%;
+        width: 2vh;
+    }
+    .whiteHoleStation{
+        position: absolute;
+        right: 45%;
+        top: 97%;
+        transition: 0.5s ease-in-out;
+        width: 2.5vh;
+    }
+    .theInterloper{
+        position: absolute;
+        top: 50vh;
+        transition: 0.5s ease-in-out;
+        right: 70vw;
+        width: 4.2%;
+    }
+    .quantumMoon{
+        position: absolute;
+        top: 35vh;
+        transition: 0.5s ease-in-out;
+        right: 35vw;
+        width: 3%;
+    }
+}
+
+@media screen and (max-width: 570px) {
+    .sun{
+        left: 39%;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .sun{
+        left: 33%;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .sun{
+        left: 30%;
+    }
 }

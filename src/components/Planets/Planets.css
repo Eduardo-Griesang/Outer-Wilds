@@ -34,3 +34,29 @@
     display: block;
     opacity: 1;
 }
+
+@media screen and (max-width: 1440px) {
+    .planet-info-onHover h2{
+        font-size: 1.25em;
+    }
+    .planet-info-onHover p{
+        font-size: 1.1em;
+        line-height: 1.2em;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .planet-info-onHover h2{
+        font-size: 1.16em;
+    }
+    .planet-info-onHover p{
+        font-size: 1em;
+        line-height: 1.1em;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .planet-info-onHover{
+        width: 40%;
+    }
+}

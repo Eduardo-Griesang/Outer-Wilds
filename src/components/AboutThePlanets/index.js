@@ -24,7 +24,7 @@ const AboutThePlanets = () => {
       <Planets
         src={sunStation}
         alt={"sunStation planets-Hover"}
-        planetName={"The sun Station"}
+        planetName={"sun Station"}
         planetDescription={
           "Is an ancient Nomai station in an extremely close and rapid orbit around the Sun."
         }
@@ -32,7 +32,7 @@ const AboutThePlanets = () => {
       <Planets
         src={hourglassTwins}
         alt={"hourglassTwins planets-Hover"}
-        planetName={"The Hourglass Twins"}
+        planetName={"Hourglass Twins"}
         planetDescription={
           "Are binary planets orbiting each other. Ember Twin is mostly desert rock divided into two halves by a wide equatorial canyon, and Ash Twin is almost entirely made of sand laid over a black, rocky core."
         }
@@ -40,7 +40,7 @@ const AboutThePlanets = () => {
       <Planets
         src={theAttlerock}
         alt={"theAttlerock planets-Hover"}
-        planetName={"The Attlerock"}
+        planetName={"Attlerock"}
         planetDescription={
           "Is the only natural satellite of Timber Hearth. It is almost entirely barren, the terrain mostly level except where it is pocked with deep craters."
         }
@@ -56,7 +56,7 @@ const AboutThePlanets = () => {
       <Planets
         src={theInterloper}
         alt={"theInterloper planets-Hover"}
-        planetName={"The Interloper"}
+        planetName={"Interloper"}
         planetDescription={
           "Is a comet on a highly elliptical orbit around the sun. It is relatively small, but is fairly easy to land on. Due to the lack of gravity in its interior"
         }
