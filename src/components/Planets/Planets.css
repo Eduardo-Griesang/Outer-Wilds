@@ -59,4 +59,8 @@
     .planet-info-onHover{
         width: 49%;
     }
+    .planets-Hover:active + .planet-info-onHover{
+        display: block;
+        opacity: 1;
+    }
 }
