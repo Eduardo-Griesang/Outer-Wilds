@@ -72,9 +72,8 @@ model-viewer {
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
     .solar-sistem{
-        top: 138vh;
-        width: 50%;
+        display: none;
     }
 }
