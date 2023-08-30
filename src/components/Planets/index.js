@@ -11,8 +11,6 @@ const Planets = ({ src, alt, planetName, planetDescription }) => {
         const positionX = e.target.x;
         const positionY = e.target.offsetTop + e.target.height +13;
 
-        console.log(e, positionY)
-
         element.style.left = `${positionX}px`
         element.style.top = `${positionY}px`
     }

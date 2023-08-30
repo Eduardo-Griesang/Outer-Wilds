@@ -4,7 +4,6 @@ import { motion, useInView, useAnimation } from "framer-motion";
 import "./App.css";
 import solarSystem from './assets/images/orbit.png'
 
-import ship from "./assets/outer wilds ship/outer_wilds__the_ship.glb";
 import Header from "./components/Header";
 import AboutTheGame from "./components/AboutTheGame";
 import AboutThePlanets from "./components/AboutThePlanets";
@@ -25,17 +24,6 @@ function App() {
   return (
     <main>
       <Header />
-
-      <model-viewer
-        classname="space-ship"
-        alt="Outer Wilds Space ship"
-        src={ship}
-        ar
-        camera-controls
-        touch-action="pan-y"
-        disable-tap
-        camera-orbit="calc(335rad + env(window-scroll-y) * 4rad) calc(60deg + env(window-scroll-y) * 50deg) calc(150m - env(window-scroll-y) * 10m)"
-      ></model-viewer>
 
       <div className="txt-content" ref={solarSistem}>
         <div>

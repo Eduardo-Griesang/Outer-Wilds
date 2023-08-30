@@ -29,19 +29,12 @@ time, mark, audio, video {
 model-viewer {
     animation: ship-in 1.5s forwards;
     animation-delay: 5s;
-    height: 500px;
+    height: 250px;
     position: absolute;
-    top: 0;
+    top: 2vh;
     right: 0;
-    transform: translateY(-350px) translateX(550px);
-    width: 700px;
+    width: 450px;
     z-index: 9;
-}
-
-@keyframes ship-in {
-    100%{
-        transform: translateY(0) translateX(0);
-    }
 }
 
 .txt-content{
@@ -70,10 +63,29 @@ model-viewer {
         top: 145vh;
         opacity: 0.7;
     }
+    model-viewer {
+        height: 150px;
+        top: 4vh;
+        width: 300px;
+    } 
 }
 
 @media screen and (max-width: 768px) {
     .solar-sistem{
         display: none;
+    }
+    model-viewer {
+        height: 100px;
+        top: 15vh;
+        width: 250px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    model-viewer {
+        height: 70px;
+        top: 15vh;
+        left: 0;
+        width: 150px;
     }
 }
