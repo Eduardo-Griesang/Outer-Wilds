@@ -27,7 +27,6 @@ time, mark, audio, video {
 }
 
 model-viewer {
-    animation: ship-in 1.5s forwards;
     animation-delay: 5s;
     height: 250px;
     position: absolute;
