@@ -4,7 +4,6 @@ import "./AboutThePlanets.css";
 
 import ship from "../../assets/outer wilds ship/outer_wilds__the_ship.glb";
 
-
 import sun from "../../assets/images/planets/sol.png";
 import sunStation from "../../assets/images/planets/estação sol.png";
 import hourglassTwins from "../../assets/images/planets/twins.png";
@@ -111,8 +110,6 @@ const AboutThePlanets = () => {
         classname="space-ship"
         alt="Outer Wilds Space ship"
         src={ship}
-        ar
-        touch-action="pan-y"
         disable-tap
         camera-orbit="calc(30rad + env(window-scroll-y) * 4rad) calc(35deg + env(window-scroll-y) * 50deg) calc(150m - env(window-scroll-y) * 10m)"
       ></model-viewer>
