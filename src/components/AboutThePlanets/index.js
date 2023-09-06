@@ -83,7 +83,7 @@ const AboutThePlanets = () => {
         src={quantumMoon}
         alt={"quantumMoon planets-Hover"}
         planetName={"Quantum Moon"}
-        planetDescription={"????"}
+        planetDescription={"?????"}
       />
       <Planets src={giantsDeepTelescope} alt={"giantsDeepTelescope"} />
       <Planets
