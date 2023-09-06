@@ -61,6 +61,5 @@
     }
     .planets-Hover:hover + .planet-info-onHover{
         display: none;
-        opacity: 1;
     }
 }
