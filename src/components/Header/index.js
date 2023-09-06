@@ -1,6 +1,6 @@
 import './Header.css'
 import logo from "../../assets/images/Outer_Wilds_Logo.png"
-import planet from "../../assets/images/backgound-nave.jpg"
+import planet from "../../assets/images/backgound-planet.jpg"
 
 
 const Header = () => {
