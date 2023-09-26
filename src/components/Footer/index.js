@@ -36,12 +36,12 @@ const Footer = () => {
         initial="hidden"
         animate={handleAnimation}
       >
-        <h3>Developed by Eduardo Griesang</h3>
+        <h5>Developed by Eduardo Griesang</h5>
 
         <nav>
           <ul>
             <li>
-              <a href="https://www.linkedin.com/in/eduardo-griesang-0b779921b/">
+              <a href="https://www.linkedin.com/in/eduardo-griesang-0b779921b/" aria-label="My Linkedin">
                 <FontAwesomeIcon
                   icon={faLinkedin}
                   size="lg"
@@ -51,7 +51,7 @@ const Footer = () => {
             </li>
 
             <li>
-              <a href="https://github.com/Eduardo-Griesang">
+              <a href="https://github.com/Eduardo-Griesang" aria-label="My Git-Hub">
                 <FontAwesomeIcon
                   icon={faGithub}
                   size="lg"
@@ -61,7 +61,7 @@ const Footer = () => {
             </li>
 
             <li>
-              <a href="https://www.instagram.com/eduardo_griesang/">
+              <a href="https://www.instagram.com/eduardo_griesang/" aria-label="My Instagram">
                 <FontAwesomeIcon
                   icon={faInstagram}
                   size="lg"
@@ -71,7 +71,7 @@ const Footer = () => {
             </li>
 
             <li>
-              <a href="mailto:eduardogriesang1@gmail.com?subject=Just saw the fanmade Outer Wilds website">
+              <a href="mailto:eduardogriesang1@gmail.com?subject=Just saw the fanmade Outer Wilds website" aria-label="Send me an Email">
                 <FontAwesomeIcon
                   icon={faEnvelope}
                   size="lg"

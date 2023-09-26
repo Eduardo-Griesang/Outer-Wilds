@@ -22,7 +22,7 @@ import whiteHoleStation from "../../assets/images/planets/estação buraco branc
 const AboutThePlanets = () => {
   return (
     <div className="solar-system-wrapper">
-      <Planets src={sun} alt={"sun"} />
+      <Planets src={sun} alt={"sun"} planetName={"Sun"} />
       <Planets
         src={sunStation}
         alt={"sunStation planets-Hover"}
@@ -85,7 +85,7 @@ const AboutThePlanets = () => {
         planetName={"Quantum Moon"}
         planetDescription={"?????"}
       />
-      <Planets src={giantsDeepTelescope} alt={"giantsDeepTelescope"} />
+      <Planets src={giantsDeepTelescope} alt={"giantsDeepTelescope"} planetName={"Giant's Deep Telescope"} />
       <Planets
         src={giantsDeep}
         alt={"giantsDeep planets-Hover"}
@@ -102,9 +102,9 @@ const AboutThePlanets = () => {
           "A large, confusing network of twisted vines and teleportation passages, the imploded remnants of a fifth planet that has long since been infected and overrun by space-bending plant growth."
         }
       />
-      <Planets src={whiteHole} alt={"whiteHole"} />
+      <Planets src={whiteHole} alt={"whiteHole"} planetName={"White Hole"} />
       
-      <Planets src={whiteHoleStation} alt={"whiteHoleStation"} />
+      <Planets src={whiteHoleStation} alt={"whiteHoleStation"} planetName={"White Hole Station"} />
 
       <model-viewer
         classname="space-ship"
