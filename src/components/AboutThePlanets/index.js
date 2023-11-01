@@ -22,6 +22,7 @@ import whiteHoleStation from "../../assets/images/planets/estação buraco branc
 const AboutThePlanets = () => {
   return (
     <div className="solar-system-wrapper">
+      <h3 className="solar-system-title">Hover items to see information</h3>
       <Planets src={sun} alt={"sun"} planetName={"Sun"} />
       <Planets
         src={sunStation}

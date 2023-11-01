@@ -15,6 +15,19 @@
     transform: scale(1.125);
 }
 
+.solar-system-title{
+    background-color: rgb(226, 226, 226);
+    border-radius: 20px;
+    padding: 0.8em;
+    color: var(--orange);
+    font-family: var(--fonte-principal);
+    font-size: 1.8em;
+    font-weight: 700;
+    position: absolute;
+    top: 10px;
+    left: 35%;
+}
+
 .sun{
     width: 50%;
 }
@@ -106,6 +119,9 @@
     .solar-system-wrapper{
         height: 90vh;
     }
+    .solar-system-title{
+        font-size: 1.3em;
+    }
     .theInterloper{
         top: 20vh;
     }
@@ -123,6 +139,9 @@
     }
     .solar-system-wrapper img{
         transform: rotate(90deg);
+    }
+    .solar-system-title{
+        display: none;
     }
     .sun{
         position: absolute;
